@@ -248,7 +248,102 @@ p{
     transform:translateX(-50%);
 
     width:100%;
+/* ==========================
+   CABEÇALHO
+========================== */
 
+.topo{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:20px;
+
+}
+
+.voltar{
+
+    width:45px;
+    height:45px;
+
+    background:#f4f4f4;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.voltar:hover{
+
+    background:#EA1D2C;
+
+    color:white;
+
+}
+
+.titulo-loja{
+
+    flex:1;
+
+    margin-left:15px;
+
+}
+
+.titulo-loja h2{
+
+    font-size:22px;
+
+    color:#222;
+
+}
+
+.titulo-loja p{
+
+    font-size:13px;
+
+    color:#777;
+
+    margin-top:2px;
+
+}
+
+.favorito{
+
+    width:45px;
+
+    height:45px;
+
+    background:#EA1D2C;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
     max-width:430px;
 
     background:white;
