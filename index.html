@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doce Intervalo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container fade">
+
+    <div class="home">
+
+        <img src="logo.png" class="logo" alt="Logo da Loja">
+
+        <h1 id="nomeLoja"></h1>
+
+        <p id="sloganLoja"></p>
+
+        <a href="cardapio.html">
+
+            <button class="btn">
+
+                🍰 Pedir Agora
+
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+document.getElementById("nomeLoja").textContent = CONFIG.loja;
+document.getElementById("sloganLoja").textContent = CONFIG.slogan;
+
+</script>
+
+</body>
+
+</html>
