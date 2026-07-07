@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container fade">
+
+    <header class="topo">
+
+        <a href="index.html" class="voltar">←</a>
+
+        <h2>Cardápio</h2>
+
+    </header>
+
+    <div class="produto">
+
+        <img id="imagemProduto" class="fotoProduto">
+
+        <div class="conteudoProduto">
+
+            <h2 id="nomeProduto"></h2>
+
+            <p id="descricaoProduto"></p>
+
+            <h3 id="precoProduto"></h3>
+
+            <button class="btn" onclick="adicionarProduto(1)">
+                🛒 Adicionar ao Carrinho
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+const produto = CONFIG.produtos[0];
+
+document.getElementById("imagemProduto").src = produto.imagem;
+document.getElementById("nomeProduto").textContent = produto.nome;
+document.getElementById("descricaoProduto").textContent = produto.descricao;
+document.getElementById("precoProduto").textContent =
+`${CONFIG.moeda} ${produto.preco.toFixed(2)}`;
+
+</script>
+
+</body>
+
+</html>
