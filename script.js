@@ -1,31 +1,33 @@
-// ================================
-// DOCE INTERVALO
-// Script Principal
-// ================================
+let quantidade = 1;
 
-// Animação do botão
-const botao = document.querySelector(".botao");
+function aumentar(){
 
-if (botao) {
+    quantidade++;
 
-    botao.addEventListener("mouseenter", () => {
-        botao.style.boxShadow = "0 10px 25px rgba(234,29,44,.35)";
-    });
-
-    botao.addEventListener("mouseleave", () => {
-        botao.style.boxShadow = "none";
-    });
+    document.getElementById("qtd").innerHTML = quantidade;
 
 }
 
-// Animação da página
-window.addEventListener("load", () => {
+function diminuir(){
 
-    document.body.style.opacity = "0";
+    if(quantidade > 1){
 
-    setTimeout(() => {
-        document.body.style.transition = ".5s";
-        document.body.style.opacity = "1";
-    }, 100);
+        quantidade--;
 
-});
+        document.getElementById("qtd").innerHTML = quantidade;
+
+    }
+
+}
+
+function adicionarCarrinho(){
+
+    alert(
+`Pedido adicionado!
+
+Produto: Bolo Comum de Cenoura
+Quantidade: ${quantidade}
+Total: R$ ${quantidade*8},00`
+);
+
+}
