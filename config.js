@@ -1,7 +1,6 @@
-// ==========================================
-// DOCE INTERVALO
-// Arquivo de Configuração
-// ==========================================
+// ========================================
+// CONFIGURAÇÕES DA LOJA
+// ========================================
 
 const CONFIG = {
 
@@ -11,28 +10,19 @@ const CONFIG = {
 
     instagram: "@lfellipe_lopes",
 
-    whatsapp: "5500000000000", // Trocaremos pelo número real
+    whatsapp: "5500000000000", // Vamos trocar pelo seu número depois
 
     moeda: "R$",
 
     produtos: [
-
         {
-
             id: 1,
-
             nome: "Bolo Comum de Cenoura",
-
-            descricao: "Bolo de cenoura macio, feito diariamente com muito carinho.",
-
+            descricao: "Bolo de cenoura fofinho, preparado diariamente.",
             preco: 8.00,
-
             imagem: "bolo.jpg",
-
             avaliacao: 5.0
-
         }
-
     ]
 
 };
