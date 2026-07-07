@@ -247,3 +247,80 @@ transform:translateY(0);
     max-width:320px;
 
 }
+/* ===========================
+   CARDÁPIO
+=========================== */
+
+.topo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:20px;
+
+}
+
+.voltar{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:25px;
+
+}
+
+.produto{
+
+    margin:20px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+}
+
+.fotoProduto{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.conteudoProduto{
+
+    padding:20px;
+
+}
+
+.conteudoProduto h2{
+
+    margin-bottom:10px;
+
+}
+
+.conteudoProduto p{
+
+    margin-bottom:20px;
+
+}
+
+.conteudoProduto h3{
+
+    color:var(--vermelho);
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
