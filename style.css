@@ -345,3 +345,44 @@ transform:translateY(0);
     margin-bottom:25px;
 
 }
+/* ======================
+   INSTAGRAM
+====================== */
+
+.instagram{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.instagram h2{
+
+    color:#E1306C;
+
+    margin:25px 0;
+
+}
+
+.voltarBtn{
+
+    background:#555;
+
+}
+
+.voltarBtn:hover{
+
+    background:#333;
+
+}
