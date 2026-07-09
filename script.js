@@ -164,3 +164,14 @@ function enviarWhatsApp(){
     );
 
 }
+// ===============================
+// Comprar Agora
+// ===============================
+
+function comprarAgora(){
+
+    adicionarProduto(1);
+
+    window.location.href = "finalizar.html";
+
+}
